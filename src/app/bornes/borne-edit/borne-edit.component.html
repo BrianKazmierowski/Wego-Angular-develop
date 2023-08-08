@@ -1,0 +1,85 @@
+<ion-item-group class="borne-edit-main-content">
+  <ion-item *ngIf="borne" lines="none" class="borne-edit-top-title">
+    <span id="bornes-edit-nom">Borne {{ borne.name }}</span>
+    <p id="bornes-edit-serie">{{ borne.serie }}</p>
+  </ion-item>
+
+  <ion-item-group class="borne-edit-body-content">
+
+    <ion-item-group class="borne-edit-body-card">
+      <div class="borne-edit-body-card-top">
+        <div class="borne-edit-body-card-label">
+          <span>Connecteur n°1</span>
+          <p>En charge</p>
+        </div>
+        <ion-img src="../../../assets/bornes/img_connecteur_charge.svg" alt="borne en charge"></ion-img>
+      </div>
+      <ion-button class="borne-edit-card-button-stop">
+        <ion-icon name="stop-circle-outline"></ion-icon>
+        <ion-label>Stopper la transaction</ion-label>
+      </ion-button>
+    </ion-item-group>
+
+    <ion-item-group class="borne-edit-body-card">
+      <div class="borne-edit-body-card-top">
+        <div class="borne-edit-body-card-label">
+          <span>Connecteur n°2</span>
+          <p>Disponible</p>
+        </div>
+        <ion-img src="../../../assets/bornes/img_connecteur_disponible.svg" alt="borne disponible"></ion-img>
+      </div>
+      <ion-button class="borne-edit-card-button-start">
+        <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        <ion-label>Démarrer la transaction</ion-label>
+      </ion-button>
+    </ion-item-group>
+
+    <ion-item-group class="borne-edit-body-card">
+      <div class="borne-edit-body-card-top">
+        <div class="borne-edit-body-card-label">
+          <span>Connecteur n°3</span>
+          <p>Disponible</p>
+        </div>
+        <ion-img src="../../../assets/bornes/img_connecteur_disponible.svg" alt="borne disponible"></ion-img>
+      </div>
+      <div class="borne-edit-body-card-bottom">
+        <ion-button class="borne-edit-card-button-start" disabled>
+          <div class="borne-edit-card-button-flex">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <ion-label>Vérrouiller</ion-label>
+          </div>
+        </ion-button>
+        <ion-button class="borne-edit-card-button-start">
+          <div class="borne-edit-card-button-flex">
+            <ion-icon name="lock-open-outline"></ion-icon>
+            <ion-label>Activé</ion-label>
+          </div>
+        </ion-button>
+      </div>
+    </ion-item-group>
+
+    <ion-item-group class="borne-edit-body-card">
+      <div class="borne-edit-body-card-top">
+        <div class="borne-edit-body-card-label">
+          <span>Connecteur n°4</span>
+          <p>En défaut</p>
+        </div>
+        <ion-img src="../../../assets/bornes/img_connecteur_defaut.svg" alt="borne en défaut"></ion-img>
+      </div>
+      <div class="borne-edit-body-card-bottom">
+        <ion-button class="borne-edit-card-button-start" disabled>
+          <div class="borne-edit-card-button-flex">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <ion-label>Vérrouiller</ion-label>
+          </div>
+        </ion-button>
+        <ion-button class="borne-edit-card-button-start">
+          <div class="borne-edit-card-button-flex">
+            <ion-icon name="lock-open-outline"></ion-icon>
+            <ion-label>Activé</ion-label>
+          </div>
+        </ion-button>
+      </div>
+    </ion-item-group>
+  </ion-item-group>
+</ion-item-group>

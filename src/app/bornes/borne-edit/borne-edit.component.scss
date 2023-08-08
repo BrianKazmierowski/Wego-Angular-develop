@@ -1,0 +1,109 @@
+.borne-edit-main-content {
+  margin-left: 3em;
+
+  .borne-edit-top-title {
+    padding-top: 1em;
+    align-items: center;
+
+    span {
+      font-weight: bold;
+      font-size: x-large;
+    }
+
+    p {
+      margin-left: 1em;
+      font-size: large;
+    }
+  }
+
+  .borne-edit-body-content {
+    display: flex;
+    justify-content: space-around;
+
+    .borne-edit-body-card {
+      border-radius: 5%;
+      background-color: white;
+      padding: 2em;
+      height: 25em;
+      width: 20em;
+
+      .borne-edit-body-card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .borne-edit-body-card-label {
+          display: flex;
+          flex-direction: column;
+          --background: white;
+          font-weight: bold;
+
+          span {
+            color: #26292780;
+          }
+
+          p {
+            color: black;
+          }
+        }
+      }
+
+      .borne-edit-card-button-stop {
+        border-radius: 5%;
+        margin-top: 2em;
+        --background: white;
+        color: #eead4a;
+        --box-shadow: none;
+        border: 2px solid #eead4a;
+      }
+
+      .borne-edit-card-button-start {
+        border-radius: 5%;
+        margin-top: 2em;
+        --background: white;
+        color: #38a755;
+        --box-shadow: none;
+        border: 2px solid #38a755;
+      }
+    }
+  }
+}
+
+.borne-edit-body-card-bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60%;
+
+  ion-button {
+    width: 45%;
+    height: 4em;
+
+    .borne-edit-card-button-flex {
+      display: flex !important;
+      flex-direction: column !important;
+
+      ion-icon {
+        margin: 0 auto;
+        margin-bottom: 1em;
+      }
+
+      ion-label {
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1000px){
+  .borne-edit-body-content {
+    flex-direction: column;
+  }
+
+  .borne-edit-main-content {
+    overflow-y: scroll;
+  }
+
+  .borne-edit-body-card {
+    margin-bottom: 1em;
+  }
+}

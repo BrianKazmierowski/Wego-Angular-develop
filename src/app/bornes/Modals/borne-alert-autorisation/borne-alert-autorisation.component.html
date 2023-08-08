@@ -1,0 +1,57 @@
+<ion-modal class="alert-borne-autorisation-modal" id="modal-borne3" #modalborne3 trigger="open-borne-dialog3">
+  <ng-template>
+    <div class="wrapper">
+      <h1 class="alert-borne-autorisation-title">Ajouter une borne de recharge <span>- Autorisations</span>
+        <ion-icon name="close-outline" (click)="modalborne3.dismiss()"></ion-icon>
+      </h1>
+      <ion-item-group class="alert-borne-autorisation-content-top">
+        <ion-item-group>
+          <ion-list>
+            <ion-label for="borne-serie" class="borne-alert-autorisation-item-title">Sélection ESMP</ion-label>
+            <ion-item fill="outline" lines="none">
+              <ion-select id="borne-esmp" interface="popover" value="fulli">
+                <ion-select-option value="fulli">Fulli</ion-select-option>
+                <ion-select-option value="total">Total</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-item-group>
+
+        <ion-item-group>
+          <ion-list>
+            <ion-label for="borne-serie" class="borne-alert-autorisation-item-title">Type de courant</ion-label>
+            <ion-item fill="outline" lines="none">
+              <ion-select id="borne-courant" interface="popover" value="ac">
+                <ion-select-option value="ac">AC</ion-select-option>
+                <ion-select-option value="dc">DC</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-item-group>
+      </ion-item-group>
+
+      <ion-item-group class="alert-borne-autorisation-content-top">
+        <ion-item-group class="borne-alert-autorisation-commentaire">
+          <ion-label for="borne-commentaire" class="borne-alert-autorisation-item-title">Commentaires</ion-label>
+          <ion-item lines="none" fill="outline">
+            <ion-textarea id="borne-commentaire" placeholder="Si nécessaire"></ion-textarea>
+          </ion-item>
+        </ion-item-group>
+        <ion-item-group class="borne-alert-autorisation-commentaire">
+          <ion-label for="borne-commentaire" class="borne-alert-autorisation-item-title">Commentaires</ion-label>
+          <ion-item lines="none" fill="outline">
+            <ion-textarea id="borne-commentaire" placeholder="Si nécessaire"></ion-textarea>
+          </ion-item>
+        </ion-item-group>
+      </ion-item-group>
+
+      <ion-item class="alert-borne-autorisation-content-footer">
+        <p>Etape 3 sur 3</p>
+        <ion-button class="alert-borne-autorisation-button-precedent"
+          (click)="modalborne3.dismiss()">Précédent</ion-button>
+        <ion-button id="open-borne-dialog4" expand="block" class="alert-borne-autorisation-button-last">Suivant</ion-button>
+        <app-borne-alert-finalisation [modalParent]="modalParent" [modalParentRoot]="modalParentRoot" [lastModal]="modalborne3"></app-borne-alert-finalisation>
+      </ion-item>
+    </div>
+  </ng-template>
+</ion-modal>

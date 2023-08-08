@@ -1,0 +1,61 @@
+.landing-container {
+  background-color: white;
+  color: black;
+  width: (368px);
+  height: (400px);
+  top: 351px;
+  left: 536px;
+  padding: 30px 20px 30px 20px;
+  border-radius: 10px;
+  gap: 32px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  ion-label {
+    font-weight: bold;
+  }
+
+  ion-item {
+    color: black;
+    --background: white !important;
+  }
+
+  .landing-button-login {
+    --background: #7b61ff;
+    width: (266px);
+    height: (43px);
+    padding: 12px 10px 12px 10px;
+    border-radius: 4px;
+    gap: 10px;
+  }
+
+  .landing-button-forget {
+    --background: transparent;
+    color: black;
+    text-transform: none;
+    text-decoration: underline;
+    --box-shadow: none;
+  }
+}
+
+.logo-login {
+  margin: 0 auto;
+  padding-top: 5%;
+  margin-bottom: 1em;
+}
+
+.landing-main-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-item-title {
+  margin-top: 2em;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: left;
+}

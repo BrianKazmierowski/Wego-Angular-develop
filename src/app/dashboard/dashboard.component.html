@@ -1,0 +1,126 @@
+<ion-grid class="dashboard-container" [fixed]="true">
+  <ion-row>
+    <ion-col size="3">
+      <ion-card class="dashboard-card">
+        <ion-card-header>
+          <ion-card-title class="card-title">
+            Points de charges (37)
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-item lines="none">
+              <img style="width: 15%" src="assets/dashboard/charge-point-available.svg" />
+              <ion-label>
+                <div class="charge-point">19 disponibles</div>
+              </ion-label>
+            </ion-item>
+            <ion-item lines="none">
+              <img style="width: 15%" src="assets/dashboard/charge-point-defaut.svg" />
+              <ion-label>
+                <div class="charge-point charge-point-defaut">1 en défaut <a class="charge-point-defaut"
+                    href="#">Localiser</a>
+                </div>
+              </ion-label>
+            </ion-item>
+            <ion-item lines="none">
+              <img style="width: 15%" src="assets/dashboard/charge-point-occupe.svg" />
+              <ion-label>
+                <div class="charge-point">19 disponibles</div>
+              </ion-label>
+            </ion-item>
+            <ion-item lines="none">
+              <img style="width: 15%" src="assets/dashboard/charge-point-total.svg" />
+              <ion-label>
+                <div class="charge-point">19 disponibles</div>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6">
+      <ion-card class="dashboard-card">
+        <ion-card-header>
+          <ion-card-title class="card-title">Consommation d'énergie</ion-card-title>
+        </ion-card-header>
+        
+          <ion-grid>
+            <ion-row>
+              <ion-col size="4" class="ion-card">
+               
+                  <img style="width: 50%" src="assets/dashboard/dashboard-chart.svg" />
+                  <div class="conso-green">-6,42%</div>
+                  <div class="conso-pui">123.194 kWh</div>
+                  <div class="conso-duration">sur la journée</div>
+               
+              </ion-col>
+              <ion-col size="4" class="ion-card">
+              
+                  <img style="width: 50%" src="assets/dashboard/dashboard-chart.svg" />
+                  <div class="conso-green">-6,42%</div>
+                  <div class="conso-pui">123.194 kWh</div>
+                  <div class="conso-duration">sur la journée</div>
+           
+              </ion-col>
+              <ion-col size="4" class="ion-card">
+              
+                  <img style="width: 50%" src="assets/dashboard/dashboard-chart.svg" />
+                  <div class="conso-red">-6,42%</div>
+                  <div class="conso-pui">123.194 kWh</div>
+                  <div class="conso-duration">sur la journée</div>
+              
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        
+      </ion-card>
+    </ion-col>
+    <ion-col size="3">
+      <ion-card class="dashboard-card">
+        <ion-card-header>
+          <ion-card-title class="card-title">Répartition</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-item lines="none">
+              <ion-label>
+                4 groupes <a class="voir-repartition" href="#">Voir</a>
+              </ion-label>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-label>
+                73 utilisateurs <a class="voir-repartition" href="#">Voir</a>
+              </ion-label>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-label>
+                82 badges <a class="voir-repartition" href="#">Voir</a>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+          <ion-button expand="block">
+            <ion-icon slot="start" name="add-outline"></ion-icon>
+            Ajouter un nouveau élément
+          </ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row> 
+    <ion-col size="12">
+
+      <ion-card class="dashboard-histo">
+        <ion-card-header >
+          <ion-card-title class="card-title">Consommation générales</ion-card-title>
+        </ion-card-header>
+      
+          <canvas id="histogramChart"></canvas>
+        
+      </ion-card>
+
+    </ion-col>
+  </ion-row> 
+
+</ion-grid>

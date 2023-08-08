@@ -1,0 +1,86 @@
+<ion-app>
+  <ion-menu [type]="menuType" class="my-side-menu" menuId="navbar" contentId="main-content" open="true">
+    <img src='assets/logo-wego.svg' class="sidebar-logo">
+    <ion-content class="ion-padding">
+      <ion-list class="menu-item-list">
+        <h1>Général</h1>
+        <ion-item [routerLink]="'/dashboard'" [class.menu-item-selected]="isActive('/dashboard')" class="menu-item">
+          <ion-icon src="assets/icon/menu-accueil-icon.svg"></ion-icon>
+          <ion-label class="menu-label">
+            Accueil
+          </ion-label>
+        </ion-item>
+        <ion-item [routerLink]="'/consommations'" [class.menu-item-selected]="isActive('/consommations')"
+          class="menu-item">
+          <ion-icon src="assets/icon/menu-consommations-icon.svg"></ion-icon>
+          <ion-label class="menu-label">
+            Consommations
+          </ion-label>
+        </ion-item>
+        <h1>Matériel</h1>
+        <ion-item [routerLink]="'/bornes'" [class.menu-item-selected]="isActive('/bornes')" class="menu-item">
+          <ion-icon src="assets/icon/menu-bornes-icon.svg"></ion-icon>
+          <ion-label class="menu-label">
+            Bornes
+          </ion-label>
+        </ion-item>
+        <ion-item [routerLink]="'/badges'" [class.menu-item-selected]="isActive('/badges')" class="menu-item">
+          <ion-icon src="assets/icon/menu-badges-icon.svg"></ion-icon>
+          <ion-label class="menu-label">
+            Badges
+          </ion-label>
+        </ion-item>
+        <h1>Audience</h1>
+        <ion-item [routerLink]="'/groupes'" [class.menu-item-selected]="isActive('/groupes')" class="menu-item">
+          <ion-icon src="assets/icon/menu-accueil-icon.svg"></ion-icon>
+          <ion-label class="menu-label">
+            Groupes
+          </ion-label>
+        </ion-item>
+        <ion-item [routerLink]="'/utilisateurs'" [class.menu-item-selected]="isActive('/utilisateurs')"
+          class="menu-item">
+          <ion-icon src="assets/icon/menu-accueil-icon.svg"></ion-icon>
+          <ion-label class="menu-label">
+            Utilisateurs
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+    <img src='assets/logo-eiffage.svg' class="sidebar-logo">
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons class="menu-toggle" slot="start">
+          <ion-menu-button>
+            <img src='assets/menu-icon.svg'>
+          </ion-menu-button>
+        </ion-buttons>
+        <ion-buttons>
+          <ion-button [routerLink]="'/dashboard'">
+            <img src='assets/logo-wego.svg'>
+          </ion-button>
+          <ion-button class="nav-button" [routerLink]="'/consommations'"> Consommations </ion-button>
+          <ion-button class="nav-button" [routerLink]="'/bornes'"> Bornes </ion-button>
+          <ion-button class="nav-button" [routerLink]="'/badges'"> Badges </ion-button>
+          <ion-button class="nav-button" [routerLink]="'/groupes'"> Groupes </ion-button>
+          <ion-button class="nav-button" [routerLink]="'/utilisateurs'"> Utilisateurs </ion-button>
+        </ion-buttons>
+        <ion-buttons *ngIf='isLogged' slot="end">
+          <ion-chip [routerLink]="'/bornes'">
+            <ion-avatar>
+              <img alt="Paramètres du compte" src="assets/leo.png" />
+            </ion-avatar>
+            <ion-label>{{ pseudo }}</ion-label>
+          </ion-chip>
+          <ion-button (click)="onLogOut()">
+            <ion-icon slot="icon-only" name="power-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding body">
+      <ion-router-outlet [class.landing-main-content]="isActive('/landing')"></ion-router-outlet>
+    </ion-content>
+  </div>
+</ion-app>

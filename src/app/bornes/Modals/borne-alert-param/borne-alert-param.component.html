@@ -1,0 +1,55 @@
+<ion-modal class="alert-borne-param-modal" id="modal-borne2" #modalborne2 trigger="open-borne-dialog2">
+  <ng-template>
+    <div class="wrapper">
+      <h1 class="alert-borne-param-title">Ajouter une borne de recharge <span>- Paramètres</span>
+        <ion-icon name="close-outline" (click)="modalborne2.dismiss()"></ion-icon>
+      </h1>
+      <ion-item-group class="alert-borne-param-content-top">
+        <ion-item-group>
+          <ion-list>
+            <ion-label for="borne-serie" class="borne-alert-param-item-title">Sélection ESMP</ion-label>
+            <ion-item fill="outline" lines="none">
+              <ion-select id="borne-esmp" interface="popover" value="fulli">
+                <ion-select-option value="fulli">Fulli</ion-select-option>
+                <ion-select-option value="total">Total</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-item-group>
+
+        <ion-item-group>
+          <ion-list>
+            <ion-label for="borne-serie" class="borne-alert-param-item-title">Type de courant</ion-label>
+            <ion-item fill="outline" lines="none">
+              <ion-select id="borne-courant" interface="popover" value="ac">
+                <ion-select-option value="ac">AC</ion-select-option>
+                <ion-select-option value="dc">DC</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-item-group>
+
+        <ion-item-group>
+          <ion-label for="borne-serie" class="borne-alert-param-item-title">Puissance de charge</ion-label>
+          <ion-item fill="outline" lines="none">
+            <ion-input id="borne-serie" type="text" />
+          </ion-item>
+        </ion-item-group>
+      </ion-item-group>
+
+      <ion-item-group class="borne-alert-param-commentaire">
+        <ion-label for="borne-commentaire" class="borne-alert-param-item-title">Commentaires</ion-label>
+        <ion-item lines="none" fill="outline">
+          <ion-textarea id="borne-commentaire" placeholder="Si nécessaire"></ion-textarea>
+        </ion-item>
+      </ion-item-group>
+
+      <ion-item class="alert-borne-param-content-footer">
+        <p>Etape 2 sur 2</p>
+        <ion-button class="alert-borne-param-button-precedent" (click)="modalborne2.dismiss()">Précédent</ion-button>
+        <ion-button id="open-borne-dialog3" expand="block" class="alert-borne-param-button-last">Suivant</ion-button>
+        <app-borne-alert-autorisation [modalParent]="modalborne2" [modalParentRoot]="modalParent"></app-borne-alert-autorisation>
+      </ion-item>
+    </div>
+  </ng-template>
+</ion-modal>

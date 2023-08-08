@@ -1,0 +1,89 @@
+.alert-borne-autorisation-title {
+  font-weight: bold;
+  color: #2a7d40;
+  border-bottom: inset;
+
+  span {
+    color: #262927;
+  }
+
+  ion-icon {
+    vertical-align: text-bottom;
+    color: #535553;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.alert-borne-autorisation-modal {
+  --background: white;
+}
+
+.alert-borne-autorisation-content-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  ion-item-group {
+    width: 45%;
+  }
+
+  ion-item {
+    --background: white;
+  }
+}
+
+.borne-alert-autorisation-item-title {
+  margin-top: 2em;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: left;
+}
+
+.alert-borne-autorisation-content-body {
+  --background: white;
+  color: black;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.alert-borne-autorisation-content-footer {
+  margin-top: 25%;
+  --background: white;
+
+  ion-button {
+    --background: #2a7d40;
+    color: white;
+    width: 10em;
+    height: 3em;
+    margin-left: auto;
+    margin-right: 1em;
+  }
+
+  .alert-borne-autorisation-button-last {
+    margin-left: 0;
+  }
+
+  .alert-borne-autorisation-button-precedent {
+    --background: white;
+    color: #2a7d40;
+    margin-left: auto;
+    &:hover {
+      --background: #2a7d40;
+      color: white;
+    }
+  }
+
+  p {
+    color: #2a7d40;
+    font-size: large;
+  }
+}
+
+.borne-alert-autorisation-commentaire {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}

@@ -1,0 +1,79 @@
+.menu-item-selected {
+  margin-top: 20px;
+  border-radius: 10px;
+  color: rgb(70, 209, 106) !important;
+  font-style: Inter;
+  font-weight: 700;
+  font-size: 12px;
+  --ion-item-background: rgba(70, 209, 106, 0.25) !important;
+}
+
+.my-side-menu {
+  --ion-background-color: white;
+}
+
+.sidebar-logo {
+  width: 8em;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.menu-item {
+  font-style: Inter;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 20px;
+  border-radius: 10px;
+  --ion-item-background: white;
+  color: #26292780;
+}
+
+.menu-item:hover {
+  --ion-item-color: rgb(70, 209, 106);
+  --ion-item-background: rgba(70, 209, 106, 0.25);
+}
+
+.menu-label {
+  margin-left: 20px;
+}
+
+.menu-item-list {
+  background: none;
+}
+
+h1 {
+  font-style: Inter;
+  font-weight: 700;
+  font-size: 14px;
+  color: black;
+}
+
+.body {
+  --ion-background-color: rgb(222, 243, 231);
+}
+
+.nav-button {
+  margin: 20px 0 20px 1vw;
+  color: #38a755;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.landing-main-content {
+  background-image: url("../assets/landing/thund.svg"),
+    url("../assets/landing/Frame71.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 95% 50%, 98% 99%;
+  background-size: 431px 1697px, 83px 275px;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-toggle {
+    display: unset;
+  }
+}

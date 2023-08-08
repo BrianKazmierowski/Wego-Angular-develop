@@ -1,0 +1,106 @@
+.dashboard-container {
+    display: unset;
+    --ion-background-color: white;
+}
+
+.dashboard-container {
+    margin-inline: unset !important;
+    width: 100%;
+}
+
+.dashboard-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+    height: 100%;
+  }
+
+.charge-point {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.charge-point-defaut {
+    color: #E23B58;
+}
+
+.conso-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    padding: 1rem;
+}
+.conso-data > * {
+    margin: 0.5rem 0; /* Ajoute un espacement vertical entre les éléments */
+  }
+.conso-data img {
+    width: 50%;
+    max-width: 100%; /* Pour s'assurer que l'image ne dépasse pas la largeur de la colonne */
+  }
+.conso-green {
+    font-size: 11px;
+    color: #46D16A;
+    font-weight: 700;
+}
+
+.conso-red {
+    font-size: 11px;
+    color: #E23B58;
+    font-weight: 700;
+}
+
+.conso-pui {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.conso-duration {
+    font-size: 13px;
+    font-weight: 400;
+    color: #262927 64%;
+}
+
+.voir-repartition {
+    margin-left: 30%;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+}
+
+#histogramChart {
+    width: auto;
+    max-width: 500px; 
+    
+   
+}
+.dashboard-histo {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 500px;
+}
+
+ion-button {
+    --background: #F4FBF7;
+    --background-hover: #F4FBF7;
+    --background-activated: #F4FBF7;
+    --background-focused: #F4FBF7;
+
+    --color: black;
+
+    --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+}

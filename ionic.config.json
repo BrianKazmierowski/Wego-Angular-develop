@@ -1,0 +1,7 @@
+{
+  "name": "wego",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

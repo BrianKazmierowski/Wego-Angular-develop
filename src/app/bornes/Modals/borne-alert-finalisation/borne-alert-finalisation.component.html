@@ -1,0 +1,27 @@
+<ion-modal class="alert-borne-finalisation-modal" id="modal-borne4" #modalborne4 trigger="open-borne-dialog4">
+  <ng-template>
+    <div class="wrapper">
+      <h1 class="alert-borne-finalisation-title">Ajouter une borne de recharge <span>- Finalisation</span>
+        <ion-icon name="close-outline" (click)="modalborne4.dismiss();
+        modalParent.dismiss();
+        modalParentRoot.dismiss();
+        lastModal.dismiss()"></ion-icon>
+      </h1>
+      <ion-item-group class="alert-borne-finalisation-content-top">
+        <ion-item lines="none">
+          <ion-img src="../../../../assets/bornes/check-circle.svg" alt="Borne enregistrée"></ion-img>
+        </ion-item>
+        <ion-item lines="none">
+          <h2>La borne est enregistrée avec succès !</h2>
+        </ion-item>
+      </ion-item-group>
+
+      <ion-item class="alert-borne-finalisation-content-footer" lines="none">
+        <ion-button id="open-borne-dialog4" (click)="modalborne4.dismiss();
+        modalParent.dismiss();
+        modalParentRoot.dismiss();
+        lastModal.dismiss()" expand="block">Quitter</ion-button>
+      </ion-item>
+    </div>
+  </ng-template>
+</ion-modal>
